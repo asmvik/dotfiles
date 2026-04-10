@@ -1,7 +1,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.config/nvim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -11,7 +11,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'Shougo/deoplete.nvim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'bling/vim-bufferline'
-Plugin 'majutsushi/tagbar'
+"Plugin 'majutsushi/tagbar'
 "Plugin 'arakashic/chromatica.nvim'
 Plugin 'zchee/deoplete-clang'
 Plugin 'rluba/jai.vim'
@@ -63,6 +63,7 @@ set expandtab
 set backspace=2
 set fileencodings=utf-8,ucs-bom,default,latin1
 set encoding=utf-8
+" set termencoding=utf-8
 set modelines=0
 set window=0
 set number
@@ -87,7 +88,8 @@ set lazyredraw          " Wait to redraw
 "set scrolljump=8       " Scroll 8 lines at a time at bottom/top
 let html_no_rendering=1 " Don't render italic, bold, links in HTML
 autocmd BufWritePre * :%s/\s\+$//e
-autocmd! BufNewFile,BufRead *.vs,*.fs set ft=glsl
+
+" set guitablabel=%N/\ %t\ %M
 
 " vim: set ft=vim :
 
@@ -128,8 +130,6 @@ let g:airline#extensions#tabline#show_close_button = 0
 let g:airline#extensions#bufferline#enabled = 1
 let g:airline#extensions#tagbar#enabled = 1
 
-let b:jai_indent_options = {'case_labels':0}
-
 "let g:chromatica#libclang_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
 "let g:chromatica#libclang_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
 "let g:chromatica#responsive_mode=1
@@ -138,10 +138,10 @@ let b:jai_indent_options = {'case_labels':0}
 "let g:deoplete#sources#clang#libclang_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
 "let g:deoplete#sources#clang#clang_header='/Library/Developer/CommandLineTools/usr/lib/clang'
 
-let g:deoplete#sources#clang#libclang_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
-let g:deoplete#sources#clang#clang_header='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang'
+"let g:deoplete#sources#clang#libclang_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
+"let g:deoplete#sources#clang#clang_header='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang'
 
-let g:python3_host_prog='/opt/local/bin/python3'
+let g:python3_host_prog='/usr/bin/python3'
 
 set completeopt -=preview
 

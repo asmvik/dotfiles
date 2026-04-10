@@ -67,8 +67,7 @@ hi Pmenu ctermfg=7 ctermbg=0 guifg=#c0b18b guibg=#2f2f2f
 hi Comment ctermfg=2 guifg=#d4d232
 
 hi Identifier ctermfg=7 guifg=#c0b18b
-hi cCustomFunc ctermfg=8 guifg=#555555
-hi link Function cCustomFunc
+hi Function ctermfg=8 guifg=#555555
 
 hi Statement ctermfg=15 cterm=NONE guifg=#d8d8d8 gui=NONE
 hi Operator ctermfg=15 guifg=#d8d8d8
@@ -104,6 +103,6 @@ hi Visual ctermfg=8 ctermbg=1 cterm=NONE guifg=#555555 guibg=#d75f5f gui=NONE
 hi PreProc ctermfg=10 guifg=#8fee96
 hi MatchParen cterm=bold ctermbg=NONE ctermfg=10 gui=bold guibg=NONE guifg=#8fee96
 
-hi StatusLine ctermfg=7 ctermbg=0 cterm=NONE guifg=#c0b18b guifg=#D4D232 gui=NONE
-hi StatusLineNC ctermfg=8 ctermbg=0 cterm=NONE guifg=#555555 guibg=#2f2f2f gui=NONE
+hi StatusLine ctermfg=7 ctermbg=0 cterm=NONE guifg=#c0b18b guibg=#2f2f2f gui=NONE
+hi StatusLineNC ctermfg=7 ctermbg=0 cterm=NONE guifg=#c0b18b guibg=#2f2f2f gui=NONE
 hi CursorLine ctermfg=7 ctermbg=0 cterm=NONE guifg=#c0b18b guibg=#2f2f2f gui=NONE
